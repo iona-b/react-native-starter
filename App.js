@@ -1,13 +1,16 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
+// React Navigation allows us to show different content to the user.
+import ComponentsScreen from './src/screens/ComponentsScreen'; // import Components
 import HomeScreen from "./src/screens/HomeScreen";
 
 const navigator = createStackNavigator(
   {
-    Home: HomeScreen
+    Home: HomeScreen,
+    Components: ComponentsScreen // Add our Components component
   },
   {
-    initialRouteName: "Home",
+    initialRouteName: "Components", // Change the home screen to out Components component
     defaultNavigationOptions: {
       title: "App"
     }
