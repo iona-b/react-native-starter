@@ -2,7 +2,7 @@ import React from "react";
 import { Text, StyleSheet } from "react-native";
 
 const HomeScreen = () => {
-  return <Text style={styles.text}>This is Iona's App!</Text>;
+  return <Text style={styles.text}>This is an app!</Text>;
 };
 
 const styles = StyleSheet.create({
@@ -12,4 +12,3 @@ const styles = StyleSheet.create({
 });
 
 export default HomeScreen;
-dfcgvhuijokpjbh HTMLAnchorElement
