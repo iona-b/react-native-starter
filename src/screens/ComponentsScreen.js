@@ -12,14 +12,16 @@ import { Text, StyleSheet, View } from 'react-native';
 
 const ComponentsScreen = () => {
 
-    const greeting = "Hi there!"
+    const name = "Iona"
 
     return (
         <View> 
-            <Text style={styles.textStyle} >This is the components screen</Text>
-            <Text>{greeting}</Text>
+            {/* <Text style={styles.textStyle} >This is the components screen</Text>
+            <Text>{greeting}</Text> */}
             {/* Curly braces allow us to refer to regular JS elements */}
             {/* We cannot show JavaScript objects inside of a text element! */}
+            <Text style={styles.headerStyle} >My First React App!</Text>
+            <Text style={styles.subHeaderStyle} >Hi there! I'm {name}!</Text>
         </View>
     );
     // Babel turns JSX into plain JavaScript code.
@@ -36,6 +38,14 @@ const styles = StyleSheet.create({
 
     textStyle: {
         fontSize: 30
+    },
+
+    headerStyle: {
+        fontSize: 45
+    },
+
+    subHeaderStyle: {
+        fontSize: 20
     }
 
 });
