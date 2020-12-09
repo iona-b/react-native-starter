@@ -12,7 +12,7 @@ const navigator = createStackNavigator(
     List: ListScreen
   },
   {
-    initialRouteName: "List", // Change the home screen to out Components component
+    initialRouteName: "Home", // Change the home screen to out Components component
     defaultNavigationOptions: {
       title: "App"
     }

@@ -1,13 +1,46 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
-const HomeScreen = () => {
-  return <Text style={styles.text}>This is an app!</Text>;
+// const HomeScreen = (props) => {
+const HomeScreen = ({navigation}) => { // Destructured method
+
+  // return (
+  //   <View>
+  //     <Text style={styles.text}>This is an app!</Text>
+  //     <Button 
+  //       title="Go to Components Demo"
+  //       onPress={() => props.navigation.navigate("Components")}
+  //     />
+  //           <Button 
+  //       title="Go to List Demo"
+  //       onPress={() => props.navigation.navigate("List")}
+  //     />
+  //     {/* <TouchableOpacity onPress={() => props.navigation.navigate("List")}>
+  //       <Text>Go To List Demo</Text>
+  //     </TouchableOpacity> */}
+  //   </View>
+  // )
+
+    return (
+    <View>
+      <Text style={styles.text}>This is an app!</Text>
+      <Button 
+        title="Go to Components Demo"
+        onPress={() => navigation.navigate("Components")}
+      />
+            <Button 
+        title="Go to List Demo"
+        onPress={() => navigation.navigate("List")}
+      />
+    </View>
+  )
+
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 30,
+    textAlign: 'center'
   }
 });
 
