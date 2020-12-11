@@ -28,9 +28,15 @@ const HomeScreen = ({navigation}) => { // Destructured method
         title="Go to Components Demo"
         onPress={() => navigation.navigate("Components")}
       />
-            <Button 
+      <Button 
         title="Go to List Demo"
         onPress={() => navigation.navigate("List")}
+      />
+      <Button 
+        title="Go to Image Screen"
+        onPress={() => navigation.navigate("Image")}
+        // onPress={() => console.log("ImageScreen")}
+
       />
     </View>
   )
